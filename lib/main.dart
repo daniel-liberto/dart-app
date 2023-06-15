@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/gradient_container.dart';
 
 void main() {
   runApp(
     const MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Flutter - Test project'),
-        ),
+        body: GradientContainer(),
       ),
     ),
   );
