@@ -1,16 +1,9 @@
-# hello_world
+# Flutter Dice Game
 
-A new Flutter project.
+A litte game write to run on mobile using dart language and flutter framework.
 
-## Getting Started
+## About dice game
 
-This project is a starting point for a Flutter application.
+This game was made in my first lessons about dart and flutter, where the point of the game is the roll the dice and have a random number generated visually.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Severals widgets are used in this simple game like structure widgets, custom external widgets made by from the zero.
