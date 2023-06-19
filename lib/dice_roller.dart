@@ -1,6 +1,9 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
-// statefulwidget works with things that change value or image
-// statelesswidget work with static things
+// statefulwidget works with widgets that change value or image.
+// statelesswidget work with static widgets.
+
+final randomizer = Random();
 
 // this one always works with two classes
 class DiceRoller extends StatefulWidget {
@@ -15,12 +18,12 @@ class DiceRoller extends StatefulWidget {
 // this class has to start with _Underline and are private class
 // that cannot be access from outside of here, even if you import
 class _DiceRollerState extends State<DiceRoller> {
-  var activeDiceImage = 'assets/img/dice-2.png';
+  var currentDiceRoll = 2;
 
   void rollDice() {
     setState(() {
       // is a "React.setEffect" type, where you can "re-render" widgets
-      activeDiceImage = 'assets/img/dice-4.png';
+      currentDiceRoll = randomizer.nextInt(6) + 1;
     });
   }
 
@@ -30,7 +33,7 @@ class _DiceRollerState extends State<DiceRoller> {
       mainAxisSize: MainAxisSize.min,
       children: [
         Image.asset(
-          activeDiceImage,
+          'assets/img/dice-$currentDiceRoll.png',
           width: 200,
         ),
         const SizedBox(height: 20),
